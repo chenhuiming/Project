@@ -1,0 +1,7 @@
+开发处理：
+1. 确认音视频SDK的发布版本号已设置正确
+2. 确认AndroidManifest.xml中的versionCode和versionName已修改成发布版本号
+3. 确认YYCall/res/values/umenginfo.xml中的umeng_appkey是50aa36945270155d91000003，umeng_channel是当前取到对应的渠道名
+4. 确认是release build，而不是debug build
+5. 确认YYCallLib/src/com/yy/yycall/callmgr/PushCallManager.java中的SENDER_ID=808642032498
+6. 确认YYCallLib/src/com/yy/yycall/util/YYDebug.java中的RELEASE_VER=true
